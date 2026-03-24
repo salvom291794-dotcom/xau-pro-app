@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0d0d0d;
+  color: white;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #FFD700;
+}
+
+.mode {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.mode button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #1a1a1a;
+  color: white;
+}
+
+.card {
+  background: #161616;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0;
+  border-radius: 10px;
+  border: none;
+  background: #222;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #FFD700;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+

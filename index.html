@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XAU Calculator PRO</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>⚡ XAU PRO</h1>
+
+  <div class="mode">
+    <button onclick="setMode('demo')" id="demoBtn">DEMO</button>
+    <button onclick="setMode('live')" id="liveBtn">LIVE</button>
+  </div>
+
+  <div class="card">
+
+    <input id="capitale" placeholder="Capitale ($)">
+    <input id="rischio" placeholder="Rischio %">
+    <input id="entry" placeholder="Entry (auto LIVE)">
+    <input id="sl" placeholder="Stop Loss">
+
+    <button onclick="calcola()">Calcola</button>
+
+  </div>
+
+  <div class="card" id="output"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
+</body>
+</html>
